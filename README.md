@@ -18,7 +18,7 @@ Example source code for the blog post [Slow batch insert with MongoDB sharding a
 
 Time in ms (lower is better):
 
- |      | No-Shard | No-Shard (with `rnd`) | Shard `{ id: "hashed" }` | Shard `{ rnd: 1 }` | 
- | --   | --       | --                    | --                       | --                 | 
- | Batch insert | 640  | 740      | 21038                 | 1004                     | 
- | Normal (sequential) insert | 1404 | 1468     | 1573                  | 1790                     | 
+                            | No-Shard   | No-Shard (with `rnd`)   | Shard `{ id: "hashed" }`   | Shard `{ rnd: 1 }`   
+----------------------------|------------|-------------------------|----------------------------|----------------------
+ Batch insert               | 640        | 740                     | 21038                      | 1004                 
+ Normal (sequential) insert | 1404       | 1468                    | 1573                       | 1790                 
