@@ -3,7 +3,6 @@
 # Warning: Do not run on production server -- may kill your existing mongod
 
 set -e
-set -x
 
 n_shards=8
 
